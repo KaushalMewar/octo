@@ -1,0 +1,9 @@
+spring:
+  data:
+    mongodb:
+      username: root
+      password: root
+      database: reminder_service
+      port: 27017
+      host : 127.0.0.1
+      authentication-database: reminder_service
