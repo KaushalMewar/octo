@@ -6,10 +6,11 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @RepositoryRestResource(collectionResourceRel = "reminders", path = "reminder")
 public interface ReminderRepository extends MongoRepository<Reminders, UUID> {
 
-
+    Optional<List<Reminders>> findByEventDayAndEventMonth(short day, short month);
 }

@@ -1,5 +1,0 @@
-spring:
-  data:
-    mongodb:
-      authentication-database: admin
-      uri: mongodb://root:root@localhost:27017/reminder_service

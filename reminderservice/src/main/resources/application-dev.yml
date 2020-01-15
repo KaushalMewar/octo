@@ -1,0 +1,15 @@
+spring:
+  data:
+    mongodb:
+      authentication-database: admin
+      uri: ${db_uri}
+
+logging:
+  level:
+    org.springframework.data.mongodb.core.MongoTemplate: DEBUG
+sns:
+  region: ${region}
+access:
+  key: ${access_key}
+secret:
+  key: ${secrect_key}
